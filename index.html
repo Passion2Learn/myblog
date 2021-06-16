@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html LANG="en"> 
+ 
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+          
+    <title> Ash's Codie Foodie Blog </title>  
+
+    <link href="css/AsFoodieBlog.css" rel="stylesheet" type="text/css" />  
+     <!--img src="backfood.png" alt="Yummy!"-->
+    
+    <style>
+       body {background:url(backfood.png) ; background-size:100% 100%;}
+
+       .container {
+        display: grid;
+        grid-gap: 15px;
+        margin: auto;
+        grid-template-columns: repeat (4, 1fr);
+       /* grid-template-rows: repeat (6, 10px);*/
+        grid-template-areas:
+           "top top top" 
+           "bottomLeft bottomRight bottomRight";
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           border: 2px solid yellow;
+           grid-auto-rows: minmax(100px, auto);
+           /*atleast 100px and auto means as many rows as there can be*/
+       }
+
+       .box {
+           width: 250px;
+           height: 150px;
+           text-align: center;
+           font-style: bold;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 13px;
+       }
+       #one{
+           order: 1;
+           grid-area: top;
+           border: 2px solid rebeccapurple;
+       }
+       #two{
+           order:2;
+           /* grid-area: bottomLeft;*/
+            border: 2px solid red;
+       }
+       #three{
+           order: 3;
+         /* grid-area: bottomRight;*/
+           border: 2px solid green;
+       }
+       #four{
+           order: 4;
+         /* grid-area: bottomRight;*/
+           border: 2px solid blue;
+       }
+       #five{
+           order: 5;
+          /* grid-area: top;*/
+          grid-area: bottomRight;
+           border: 2px solid green;
+       }
+    </style>
+</head>  
+
+<body class="body">  
+    <!-- Body tag and in this body class call in the CSS file-->      
+    <!--"background: beige"-->
+    
+<header>
+    <h1>Foodies Guide</h1>
+                <!--  <a href="index.html"> HOME</a>
+                    <a href="gallery.html">GALLERY</a>
+                </center>-->
+    <p><em> Welcome to my first blog!</em></p>
+</header>
+
+<div class="container">
+    
+</div>
+
+    <div class="wrapper">  
+        <!--div tag in this main wrapper class calls in CSS file -->  
+    <div class="header">  
+            <!-- Header div-->  
+    <div class="header-logo">  
+        </div>  
+    <div class="header-text">  
+        </div>  
+    <div class="header-mini-logo">  
+            <!-- here is link tag in the header mini div tag
+        <a href="https://www.facebook.com/Coderdash">  
+                <img src="css/fb_logo.png" alt="FB" title="Follow us on facebook" border="1" /></a>  
+        <a href="#">  
+                <img src="css/link_logo.png" alt="Link" title="Follow us on linkedin" border="0" /></a>  
+        <a href="#">  
+            <img src="css/twit_logo.png" alt="Twit" title="Follow us on twitter" border="0" /></a>  
+        <a href="#">  
+            <img src="css/insta_logo.png" alt="FL" title="Follow us on flicker" border="0" /></a>  -->
+        </div>  
+    </div>  
+
+    <div class="navbar">  
+        <!-- This is navigation bar-->  
+        <ul>  
+            <!-- here is list tag-->  
+            <li><a href="#" title="home">Home</a></li>  
+            <li><a href="#" title="learn more about us">About us</a></li>  
+                <li><a href="#" title="services">Services</a></li>  
+            <li><a href="#" title="clients">Clients</a></li>  
+            <li><a href="#" title="projects">Projects</a></li> 
+            <li><a href="#" title="Contact us">Contact us </a></li>  
+            
+        </ul>  
+    </div>  
+    <div class="mainbody">  
+        <div class="mainbody-center">  
+            <h1 class="h1">  
+                Healthy Food </h1>  
+            <!-- H1 tag-->  
+            <p class="p">  
+                Posted by  Ash | Filed under templates, internet</p>  
+            <br>  
+            <!-- Paragraph tag-->  
+            <p class="p">  
+                Healthy food doesn't have to be boring food. Our bodies can handle a little bit of 
+                sugar or oil to make food more attractive to our brain and enhance flavors in some cases.
+                Food, when made correctly can be delicous and healthy for us.
+                <br>  
+                    <span class="line"></span>
+
+                This is a CSS website template by Ash. This work is shared  
+                under the Creative Commons Attribution 3.0 License, which means that you are free  
+                to use it for any personal purposes provided you credit me in the form  
+                of a link back to <a href="https://www.facebook.com/Coderdash"> Coder Ash
+                </a>  
+            </p>  
+            <br>  
+            Feel free to comment | May 1, 2020  
+        
+            <br>  
+            <h1 class="h1">  
+                Snacks</h1>  
+            <p class="p">  
+                Posted by Ash the coder | Filed under templates, internet</p>  
+            
+            <p class="p">  
+                The most underrated of all food items. We spent more of our time snacking or wanting a snack. It is a food
+                item designed as a quick "pick me up" which gives our energy levels and a boost and our tummies a little tantalizer. 
+                </a>  
+            </p>  
+            <br>  
+            Read more |  Leave Feedback
+        </div>  
+        <!-- Side bar menu-->  
+        <div class="mainbody-right">  
+            <center>  
+                <h2 class="h2">  
+                    SideBar Menu</h2>  
+            </center>  
+            <ul>  
+                <li><a href="html pages/BlogIndex.html">Sassy Samosas</a></li>  
+                <li><a href="html pages/index.html">Patakha Pakoras</a></li>  
+                <li><a href="#">Gorgeous grills</a></li>  
+                <li><a href="#">Kabob Kalendar</a></li>  
+                <li><a href="#">Air Fryer Affairs </a></li> 
+                <li><a href="#">Soups & Salads</a></li>   
+                <li><a href="#">Drinks & Smoothies</a></li>      
+            </ul>  
+        </div>  
+        </div>  
+    </div>  
+    <!--a target="hiiii" ></a>href="Google.com"></a-->
+    <!-- Here is Footer-->  
+    <div class="footer">  
+        <p> Template designed by:<a href="https://www.facebook.com/Coderdash">Copyright &copy; 
+            <script>document.write(new Date().getFullYear());</script> Code with Ash </a></p>
+    </div>  
+</body>  
+</html> 
+
+<!--EMMET SHORTCUTS
+!--nav.menu>ul>li*5>a.link
+<nav class="menu">
+    <ul>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+    </ul>
+</nav>
+-->
